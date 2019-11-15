@@ -1,0 +1,28 @@
+<html>
+	<script type="text/javascript">
+		function Student(param){
+			this.name=param;
+		}
+		
+		/*
+			通过调用形式，决定当前函数是普通函数还是构造函数
+			普通函数调用形式：对象.函数();
+			构造函数调用形式：new 函数();
+			
+			在Java中方法内部的this的指向与JavaScript中函数内部this的指向是一样的
+				1)在构造方法中，this指的是当前创建的实例对象
+				2)在普通方法中，this指的是调用当前方法的实例对象
+		*/
+		
+		//普通函数调用形式
+			/*
+			window.Student("mike");
+			alert(window.name);
+			*/
+			
+		//构造函数调用形式
+			var obj = new Student("allen");
+			alert("obj.name = "+ obj.name)
+		
+	</script>
+</html>

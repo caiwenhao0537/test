@@ -1,0 +1,32 @@
+<html>
+	<script type="text/javascript">
+		//1.object内置构造函数
+		/*
+		var obj = new Object();
+		alert(typeof obj);
+		*/
+		
+		//2.JSON格式
+		/*
+		JSON格式：{属性名：值，属性名：值}；
+		*/
+		
+		/*
+		var stuObj={
+		name:"mike",
+		age:24,
+		sayHello:function(){alert("hello"+ this.name)}}
+		alert("学员名称"+stuObj.name + "学员年龄"+stuObj.age);
+		stuObj.sayHello();
+		*/
+		
+		//3.自定义构造函数
+		function Student(param1,param2){
+			this.sname = param1;
+			this.sex = param2;
+		}
+		
+		var stuObj = new Student("allen","女");
+		alert("年龄"+stuObj.sname + " 性别"+stuObj.sex);
+	</script>
+</html>

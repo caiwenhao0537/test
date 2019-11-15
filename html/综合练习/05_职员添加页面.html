@@ -1,0 +1,69 @@
+<html>
+<!--
+什么是表单域标签
+1、辅助用户在浏览器手动填写数据
+2、在浏览器发送请求时，自动将表单域中标签中填写的数据，作为参数发送到服务器端
+-->
+<body>
+   <center>
+     <table border='2'>
+	     <tr>
+		   <td>职员名称:</td>
+		   <td><input type="text"/></td>
+		 </tr>
+		 <tr>
+		    <td>职员年龄:</td>
+			<td><input type="text"/></td>
+		 </tr>
+		 <tr>
+		     <td>职员性别:</td>
+			 
+			 <td>
+			 <input type="radio" name="sex">男
+			 <input type="radio" name="sex">女
+			 </td>
+		  </tr>
+		 <tr>
+		    <td>职员特长</td>
+			<td>
+				<input type="checkbox" name='hobby'/>喝酒
+				<input type="checkbox" name='hobby'/>工作能力强
+				<input type="checkbox" name='hobby'/>自学能力强
+				<input type="checkbox" name='hobby'/>羽毛球
+			</td>
+		 </tr>
+		 <tr>
+		    <td>职员头像</td>
+			<td>
+				<input type="file"/>
+			</td>
+		 </tr>
+		 <tr>
+		   <td>职员学历</td>
+		   <td>
+		   <select>
+			<option>中学</option>
+			<option>大专</option>
+			<option>本科</option>
+			<option>硕士</option>
+			<option>博士</option>
+		   </select>
+		   </td>
+		 </tr>
+		 <tr>
+			<td>个人评价</td>
+			<td>
+				<textarea rows="15" cols="20">
+				
+				</textarea>
+			</td>
+		 </tr>
+		 <tr>
+			<td><input type="submit" value="提交"></td>
+			<td><input type="reset"></td>
+		 </tr>
+	 </table>
+   </center>
+</body>
+
+</html>

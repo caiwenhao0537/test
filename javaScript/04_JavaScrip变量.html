@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			//js变量的数据类型由当前的复制内容决定
+			/*var name = "mike" //name是string类型
+			name = 100 //name是数字类型 number
+			window.alert(name)
+			*/
+			
+			//JS支持[变量提升]，因此变量可以先使用后赋值
+			/*num=500
+			var num
+			window.alert("num = "+num)
+			*/
+			
+			//JS允许var声明同名变量，后声明的变量会覆盖掉前方声明的变量
+			var name = "mike"
+			var name = "allen"
+			window.alert("name="+name)
+			
+			//如果浏览器中的js编译器没有发现变量声明位置，就将变量使用位置作为声明位置，所以 num=600；相当于var num=600
+			
+			num=600
+			window
+		</script>
+	</head>
+</html>
